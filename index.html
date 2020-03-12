@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Villain Game</title>
-    <script src="Hero.js"></script>
     <script src="Person.js"></script>
+    <script src="Hero.js"></script>
     <script src="Weapon.js"></script>
     <script src="Villain.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div id="hero">
-        Health: 10
-        <br>
-        Attack Power: 5
-        <br>
-        <!-- <button type="button" class="btn btn-primary render-button" onclick="attack()">Attack enemy</button>  -->
+    <div class="container bg-dark">
+        <div class="row">
+            <div class="col">
+                <div id="hero" class="card bg-primary text-white">
+                    <!-- <button type="button" class="btn btn-primary render-button" onclick="attack()">Attack enemy</button>  -->
+                </div>
+            </div>
+            <div class="col">
+                <div id="villain" class="card bg-secondary text-black">
+
+                </div>
+            </div>
+        </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-<div>
-    
-</div>

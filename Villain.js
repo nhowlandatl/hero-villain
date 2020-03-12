@@ -1,14 +1,14 @@
-console.log("Villian.js started")
+console.log("Villain.js started")
 
 class Villain extends Person {
     constructor(name) {
         super(name);
     }
     render(){
-        console.log(this.health)
-        console.log(Villain)
         return `
-        <h2 id="villianName">${this.name}</h2>
+        <h2 id="villainName">${this.name}</h2>
+        <h2 id="villainHealth">${this.health} hp</h2>
+        <h2 id="villainWeapon">${this.weapon.name} - (${this.weapon.damage} damage)</h2>
         `
     }
 }

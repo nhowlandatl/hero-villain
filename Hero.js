@@ -6,6 +6,9 @@ class Hero extends Person {
     render(){
         return `
         <h2 id="heroName">${this.name}</h2>
+        <h2 id="heroName">${this.health} hp</h2>
+        <h2 id="heroWeapon">${this.weapon.name} - (${this.weapon.damage} damage)</h2>
+        
         `
     }
 }
