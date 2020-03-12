@@ -1,20 +1,19 @@
+console.log("Person.js started")
+
 class Person {
     constructor(name) {
         this.name = name;
         this.health = 100;
-        this.weapon = "";
+        this.weapon = null;
     }
 
     equipWeapon(weapon) {
         this.weapon = weapon;
     }
     attack(person) {
-        person.health - person.weapon;
+        person.health = person.health - this.weapon.damage;
     }
-    
 }
 
-export default {Person};
-
-let fred = new Person('Fred');
-console.log(fred);
+// let fred = new Person('Fred'); 
+// console.log(fred); 
