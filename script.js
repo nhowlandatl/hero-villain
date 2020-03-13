@@ -17,5 +17,13 @@ const containerVillain = document.getElementById("villain");
 containerHero.innerHTML = player.render();
 containerVillain.innerHTML = computer.render();
 
-console.log(player);
-console.log(computer);
+
+// Hero attack 
+document.getElementById("heroAttack").addEventListener("click", function() {
+    player.attack(computer);
+    computerHealth.innerHTML = computer.health;
+    computer.attack(player);
+    playerHealth.innerHTML = computer.health;
+});
+
+// Update villain health
