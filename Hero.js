@@ -1,4 +1,3 @@
-console.log("Hero.js started...")
 class Hero extends Person {
     constructor(name) {
         super(name);
@@ -6,12 +5,10 @@ class Hero extends Person {
     render(){
         return `
         <h2 id="heroName">${this.name}</h2>
-        <h2 id="heroName">${this.health} hp</h2>
-        <h2 id="heroWeapon">${this.weapon.name} - (${this.weapon.damage} damage)</h2>
+        <h2 id="heroHealth">${this.health} hp</h2>
+        <h2 id="heroWeapon">${this.weapon.name} (${this.weapon.damage} damage)</h2>
+        <img class="card-img-bottom" src="http://archive.rpgamer.com/games/ad_d/icewind/art/artwork05.jpg" alt="">
         `
     }
 }
-
-// let bob = new Hero('Bob')
-// console.log(bob);
 

@@ -13,20 +13,30 @@
 <body>
     <div class="container bg-dark">
         <div class="row px-1 py-4">
-            <div class="col">
+            <div class="col-6">
                 <div id="hero" class="card bg-primary text-white">
-                    
+                    <!-- HERO IS RENDERED HERE -->
                 </div>
+                    <!-- Attack villain button -->
                 <button type="button-fluid" class="btn btn-block btn-danger" id="heroAttack">Attack enemy</button>  
             </div>
-            <div class="col">
+            <div class="col-6">
                 <div id="villain" class="card bg-secondary text-black">
-
+                    <!-- VILLAIN IS RENDERED HERE -->
                 </div>
-                <div id="computerHealth"></div>
+                    <!-- Attack hero button -->
+                <button type="button-fluid" class="btn btn-block btn-danger" id="villainAttack">Attack hero</button> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <div class="alert alert-danger" role="alert" id="attackNotice">
+                    Begin battle by attacking!
+                </div>
             </div>
         </div>
     </div>
 <script src="script.js"></script>
 </body>
 </html>
+

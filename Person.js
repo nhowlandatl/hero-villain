@@ -14,6 +14,3 @@ class Person {
         person.health = person.health - this.weapon.damage;
     }
 }
-
-// let fred = new Person('Fred'); 
-// console.log(fred); 
